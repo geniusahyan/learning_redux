@@ -10,7 +10,7 @@ const Todos = () => {
     <div>
       <h2>todos</h2>
       {todos.map((todo) => (
-        <li className='bg-orange-400 w-[20rem] box-border items-center flex justify-between mb-1 list-none decoration-none p-2 px-4 rounded ' key={todo.id}>
+        <li className='bg-orange-400 w-[50rem] box-border items-center flex justify-between mb-1 list-none decoration-none p-2 px-4 rounded ' key={todo.id}>
           <h3>{todo.text}</h3>
           <button className='bg-red-400 ml-3 p-1 px-3 rounded ' onClick={() => dispatch(removeTodo(todo.id))}>remove</button>
         </li>
